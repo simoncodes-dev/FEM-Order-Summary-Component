@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.card {
+    background-color: #fff;
+    width: 350px;
+    border-radius: 20px;    
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.selected-plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px 12px;
+    border-radius: 10px;
+}
+
+.summary {
+    margin: 20px;
+    text-align: center;
+    align-items: center;   
+}
+
+.summary p {
+    color: hsl(224, 23%, 55%)
+}
+
+.plan-name {
+    color: black;
+    font-weight: 400;
+}
+
+.plan-information {
+    line-height: 0.5em;
+    text-align: left;
+    align-self: flex-start;
+    margin: 0 0 0 12px; 
+}
+
+.plan-change {
+    text-align: right; 
+    flex-grow: 1;
+}
+
+.change-link:hover {
+    cursor:pointer;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+.proceed-area {
+    margin-top: 20px;
+}
+
+.proceed-button {
+    width: 100%;
+    color: #fff;
+    background-color: #382AE1;
+    border: none; 
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0px 20px 20px rgba(56,42,225,0.19);
+}
+
+.proceed-button:hover{
+    background-color: #766CF1;
+    cursor: pointer;
+}
+
+.cancel-area {
+    margin-top: 20px;
+}
+
+.cancel-button {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%)
+}
+
+.cancel-button:hover{
+    color: #222;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px ){
+    .card {
+        min-width: 90vw;
+    }
+}
